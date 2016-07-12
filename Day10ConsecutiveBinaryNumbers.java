@@ -27,13 +27,14 @@ public class Day10ConsecutiveBinaryNumbers {
     	int max = 0;
     	int count = 0;
     	for(char digit : binary.toCharArray()){
-    		
+            //if digit is 1 count it
     		if(digit == '1'){
     			count++;
     		}else{    			
     			count = 0;
     		}
 
+            //check if current count is already the biggest
 			if(count>max){
 				max = count;
 			}
